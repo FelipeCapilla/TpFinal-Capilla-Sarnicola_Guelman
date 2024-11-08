@@ -12,8 +12,9 @@ fetch('https://dummyjson.com/recipes')
     let markUp = `
             <article>
                 <img src=${recetas.image} alt= ${recetas.name}>
-                <p>Name: ${recetas.name}</p>
-                <p>Status:${recetas.status}</p>
+                <p>${recetas.name}</p>
+                <p>Nivel de dificultad: ${recetas.difficulty}</p>
+                <a href=receta.html?id=${recetas.id}> Ir al detalle </a>
              </article>
             `;
             homes += markUp

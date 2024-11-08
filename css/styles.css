@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 li{
@@ -32,4 +33,20 @@ header{
 
 .logo{
     height: 100px;
+}
+
+.home{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+article img{
+    width: 80%;
+}
+
+article{
+    width: 30%;
+    margin-bottom: 15px;
 }
