@@ -50,3 +50,20 @@ article{
     width: 30%;
     margin-bottom: 15px;
 }
+
+.formulario{
+    max-width: 350px;
+    padding: 70px;
+    background-color: lightblue;
+
+}
+
+.orden{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input{
+    margin-top: 10px;
+}
