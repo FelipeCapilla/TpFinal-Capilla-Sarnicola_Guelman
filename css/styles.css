@@ -54,8 +54,7 @@ article{
 
 .formulario{
     max-width: 350px;
-    padding: 70px;
-    background-color: lightblue;
+     background-color: lightblue;
 
 }
 
@@ -63,8 +62,17 @@ article{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
+    
 }
 
 .input{
     margin-top: 10px;
 }
+
+.register {
+    max-width: 350px;
+    
+    background-color: lightblue;
+
+}
+
