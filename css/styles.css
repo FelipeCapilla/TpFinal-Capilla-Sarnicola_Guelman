@@ -18,6 +18,7 @@ header{
     align-items: center;
     padding-left: 20px;
     padding-right: 20px;
+    margin-bottom: 20px;
 }
 
 .menu{
@@ -36,7 +37,7 @@ header{
     height: 100px;
 }
 
-.home{
+.caja{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -55,14 +56,12 @@ article{
 .formulario{
     max-width: 350px;
      background-color: lightblue;
-
 }
 
 .orden{
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    
 }
 
 .input{
@@ -71,8 +70,19 @@ article{
 
 .register {
     max-width: 350px;
-    
     background-color: lightblue;
-
 }
 
+.bloque{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.cajita{
+    margin: 10px 10px 10px 10px;
+    background-color: dimgrey;
+    color: white;
+    width: 15%;
+    text-align: center;
+}

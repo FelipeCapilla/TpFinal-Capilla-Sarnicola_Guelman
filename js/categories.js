@@ -10,7 +10,7 @@ fetch('https://dummyjson.com/recipes/tags')
   for(let i=0; i < data.length; i++){
     const categoria = data[i]
     let markUp = `
-            <a href="category.html?cat=${categoria}">${categoria}</a>
+            <a class="cajita" href="category.html?cat=${categoria}">${categoria}</a>
             `;
             categorias += markUp
     }
