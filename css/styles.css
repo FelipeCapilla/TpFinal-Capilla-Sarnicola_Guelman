@@ -96,3 +96,8 @@ article{
     width: 15%;
     text-align: center;
 }
+
+.cargar_mas{
+    display: flex;
+    text-align: center;
+}
