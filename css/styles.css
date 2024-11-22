@@ -53,6 +53,7 @@ header{
 
 article img{
     width: 80%;
+    border-radius: 20px;
 }
 
 article{
