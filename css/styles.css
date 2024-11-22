@@ -19,6 +19,7 @@ header{
     padding-left: 20px;
     padding-right: 20px;
     margin-bottom: 20px;
+    background-color: lightblue;
 }
 
 .menu{
@@ -36,6 +37,11 @@ header{
 .logo{
     height: 100px;
     border-radius: 20px;
+}
+
+.buscador{
+    border-radius: 30px;
+    
 }
 
 .caja{
