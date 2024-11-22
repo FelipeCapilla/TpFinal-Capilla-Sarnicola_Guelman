@@ -63,7 +63,8 @@ article{
 
 .formulario{
     max-width: 350px;
-     background-color: lightblue;
+    background-color: lightblue;
+    border-radius: 20px;
 }
 
 .orden{
@@ -79,6 +80,7 @@ article{
 .register {
     max-width: 350px;
     background-color: lightblue;
+    border-radius: 20px;
 }
 
 .bloque{
