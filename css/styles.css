@@ -59,6 +59,8 @@ article img{
 article{
     width: 30%;
     margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .formulario{
@@ -100,4 +102,12 @@ article{
 .cargar_mas{
     display: flex;
     text-align: center;
+}
+
+footer{
+    margin-top: 20px;
+}
+
+p{
+    margin-bottom: 10px;
 }
