@@ -111,3 +111,25 @@ footer{
 p{
     margin-bottom: 10px;
 }
+
+@media (max-width: 420px){
+    *{
+        padding: 0;
+    }
+    article{
+        width: 100%;
+        justify-content: center;
+    }
+    header{
+        flex-direction: column;
+    }
+    .logo{
+        height: 50px;
+    }
+    .menu{
+        flex-direction: column;
+    }
+    .menu a{
+        font-size: smaller;
+    }
+}
