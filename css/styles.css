@@ -1,6 +1,7 @@
 *{
     box-sizing: border-box;
     margin: 0 auto;
+    font-family: "Jaro", sans-serif;
 }
 
 li{
@@ -93,10 +94,13 @@ article{
 
 .cajita{
     margin: 10px 10px 10px 10px;
-    background-color: dimgrey;
-    color: white;
-    width: 15%;
-    text-align: center;
+    background-color: lightblue;
+    border-radius: 20px;
+    height: 70px;
+    width: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .cargar_mas{
