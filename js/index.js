@@ -15,7 +15,7 @@ fetch('https://dummyjson.com/recipes')
                 <img src=${recetas.image} alt= ${recetas.name}>
                 <p>${recetas.name}</p>
                 <p>Nivel de dificultad: ${recetas.difficulty}</p>
-                <a href=receta.html?id=${recetas.id}> Ir al detalle </a>
+                <a class="detalle" href=receta.html?id=${recetas.id}> Ir al detalle </a>
              </article>
             `;
             homes += markUp
@@ -30,7 +30,7 @@ fetch('https://dummyjson.com/recipes')
           <img src=${recetas2.image} alt= ${recetas2.name}>
           <p>${recetas2.name}</p>
           <p>Nivel de dificultad: ${recetas2.difficulty}</p>
-          <a href=receta.html?id=${recetas2.id}> Ir al detalle </a>
+          <a class="detalle" href=receta.html?id=${recetas2.id}> Ir al detalle </a>
         </article>
         `;
         homes += markUp2

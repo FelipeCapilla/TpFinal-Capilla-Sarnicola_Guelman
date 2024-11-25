@@ -19,7 +19,7 @@ fetch(`https://dummyjson.com/recipes/tag/${cat}`)
             <img src=${cate.image} alt= ${cate.name}>
             <p>${cate.name}</p>
             <p>Nivel de dificultad: ${cate.difficulty}</p>
-            <a href=receta.html?id=${cate.id}> Ir al detalle </a>
+            <a class="detalle" href=receta.html?id=${cate.id}> Ir al detalle </a>
         </article>
         `;
         categoria += markUp
