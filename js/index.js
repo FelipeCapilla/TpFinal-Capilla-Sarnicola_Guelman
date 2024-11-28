@@ -8,7 +8,7 @@ fetch('https://dummyjson.com/recipes')
 })
 .then(function(data) {
   console.log(data);
-  for(let i=0; i < 20; i++){
+  for(let i=0; i < 10; i++){
     const recetas = data.recipes[i]
     let markUp = `
             <article>
@@ -23,7 +23,7 @@ fetch('https://dummyjson.com/recipes')
     home.innerHTML = homes;  
   
     boton.addEventListener("click", function(){
-      for(let i = 20; i < 30; i++){
+      for(let i = 10; i < 20; i++){
         const recetas2 = data.recipes[i]
         let markUp2 = `
         <article>

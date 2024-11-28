@@ -22,7 +22,6 @@ fetch(`https://dummyjson.com/recipes/${id}`)
                 <p>Categorías: ${data.mealType}</p>
             </article>
             `;
-           
             receta.innerHTML = markUp
 })
 .catch(function(error) {
