@@ -4,6 +4,11 @@
     font-family: "Jaro", sans-serif;
 }
 
+.titulo{
+    margin-bottom: 15px;
+    text-align: center;
+}
+
 li{
     list-style: none;
 }
@@ -42,7 +47,7 @@ header{
 
 .buscador{
     border-radius: 30px;
-    
+    color: black;
 }
 
 .caja{
@@ -105,7 +110,14 @@ article{
 
 .cargar_mas{
     display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+    background-color: lightblue;
+    border-radius: 20px;
+    height: 80px;
+    width: 120px;
+    font-size: larger;
 }
 
 footer{
