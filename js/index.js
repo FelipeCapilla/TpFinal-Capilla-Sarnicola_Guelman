@@ -2,6 +2,9 @@ const home = document.querySelector('.home')
 let homes = ""
 const boton = document.querySelector("#cargar")
 let skip = 0
+const texto = document.getElementById('texto');
+const invalidTexto =document.querySelector ('.texto ');
+const form = document.querySelector('.search_form')
 
 function getRecipes(){
   fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
@@ -35,3 +38,21 @@ boton.addEventListener("click", function(){
   skip += 10
   getRecipes()
 })
+
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  let errors = false;
+  console.log('erro', errors)
+  if (texto.value.length < 3) {
+      invalidTexto.innerText = 'Escriba al menos 3 caracteres';
+      invalidTexto.style.display = 'block';
+      errors = true;
+  } else {
+      invalidTexto.style.display = 'none';
+  }
+  if (!errors) {
+      this.submit();
+  }
+});
