@@ -4,8 +4,8 @@ const boton = document.querySelector("#cargar")
 let skip = 0
 
 const texto = document.getElementById('buscar');
-const invalidTexto =document.querySelector ('.invalido');
-const form = document.querySelector('.search_form')
+const invalidTexto = document.querySelector ('.invalido');
+const forms = document.querySelector('.search_form')
 
 function getRecipes(){
   fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
@@ -41,8 +41,9 @@ boton.addEventListener("click", function(){
 })
 
 
-form.addEventListener('submit', function (event) {
+forms.addEventListener('submit', function (event) {
   event.preventDefault();
+
   let errors = false;
   console.log('erro', errors)
   if (texto.value.length < 3) {
