@@ -139,6 +139,14 @@ p{
     align-items: center;
 }
 
+.tag{
+    margin-top: 10px;
+}
+
+h3{
+    margin-top: 10px;
+}
+
 @media (max-width: 420px){
     *{
         padding: 0;

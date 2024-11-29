@@ -15,7 +15,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     let tagsLinks = ""
 
     for(i = 0; i < data.tags.length; i++){
-      tagsLinks += `<a href="category.html?cat=${data.tags[i]}">${data.tags[i]}</>`
+      tagsLinks += `<a class="tag" href="category.html?cat=${data.tags[i]}">${data.tags[i]}</a>`
     }
     let markUp = `
             <article>
@@ -23,6 +23,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
                 <p>Instrucciones: ${data.instructions}</p>
                 <p>Tiempo de cocción: ${data.prepTimeMinutes}</p>          
                 <img src=${data.image} alt= ${data.name}>
+                <h3>categorías</h3>
                 ${tagsLinks}
             </article>
             `;
