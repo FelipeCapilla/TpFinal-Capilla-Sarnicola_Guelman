@@ -21,7 +21,7 @@ fetch(`https://dummyjson.com/recipes/tag/${cat}`)
     let markUp = `
         <article>
             <img src=${cate.image} alt= ${cate.name}>
-            <p>${cate.name}</p>
+            <h3>${cate.name}</h3>
             <p>Nivel de dificultad: ${cate.difficulty}</p>
             <a class="detalle" href=receta.html?id=${cate.id}> Ir al detalle </a>
         </article>

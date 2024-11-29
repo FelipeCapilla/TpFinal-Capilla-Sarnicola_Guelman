@@ -42,7 +42,7 @@ header{
 
 .logo{
     height: 100px;
-    border-radius: 20px;
+    border-radius: 90px;
 }
 
 .buscador{
@@ -158,6 +158,10 @@ h3{
     text-align: center;
 }
 
+.inst{
+    text-align: center;
+}
+
 @media (max-width: 420px){
     *{
         padding: 0;
@@ -171,11 +175,19 @@ h3{
     }
     .logo{
         height: 50px;
+        margin-top: 10px;
     }
     .menu{
         flex-direction: column;
     }
     .menu a{
         font-size: smaller;
+    }
+    .formulario{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .detalle{
+        margin-top: 10px;
     }
 }

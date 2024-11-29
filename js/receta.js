@@ -24,7 +24,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
     let markUp = `
             <article>
                 <h1>${data.name}</h1>
-                <p>Instrucciones: ${data.instructions}</p>
+                <p class="inst">Instrucciones: ${data.instructions}</p>
                 <p>Tiempo de cocción: ${data.prepTimeMinutes}</p>          
                 <img src=${data.image} alt= ${data.name}>
                 <h3>categorías</h3>
