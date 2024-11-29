@@ -1,7 +1,6 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString)
 let id = queryStringObj.get("id")
-console.log(id)
 
 const receta = document.querySelector(".receta")
 let receta_Seleccionada = ""
@@ -15,7 +14,6 @@ fetch(`https://dummyjson.com/recipes/${id}`)
   return response.json()
 })
 .then(function(data) {
-  console.log(data);
     let tagsLinks = ""
 
     for(i = 0; i < data.tags.length; i++){

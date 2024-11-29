@@ -15,7 +15,6 @@ fetch(`https://dummyjson.com/recipes/tag/${cat}`)
   return response.json()
 })
 .then(function(data) {
-  console.log(data);
   for(let i=0; i < data.recipes.length; i++){
     const cate = data.recipes[i]
     let markUp = `

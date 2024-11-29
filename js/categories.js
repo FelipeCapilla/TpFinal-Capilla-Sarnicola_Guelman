@@ -10,7 +10,6 @@ fetch('https://dummyjson.com/recipes/tags')
   return response.json()
 })
 .then(function(data) {
-  console.log(data);
   for(let i=0; i < data.length; i++){
     const categoria = data[i]
     let markUp = `

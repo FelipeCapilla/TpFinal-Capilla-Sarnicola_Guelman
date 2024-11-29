@@ -11,14 +11,12 @@ const invalidTexto = document.querySelector ('.invalido');
 const forms = document.querySelector('.search-form')
 
 
-console.log(bus)
+
 fetch(`https://dummyjson.com/recipes/search?q=${bus}`)
 .then(function(response) {
   return response.json()
 })
 .then(function(data) {
-    console.log(data)
-  
   for(let i=0; i < data.recipes.length; i++){
     let cate = data.recipes[i]
     console.log(cate)
