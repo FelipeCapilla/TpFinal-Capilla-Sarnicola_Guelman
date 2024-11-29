@@ -1,13 +1,14 @@
 let queryString = location.search;
 let queryStringObj = new URLSearchParams(queryString)
 let bus = queryStringObj.get("search")
+let noResults = document.querySelector('.no_results')
 
-let seccion = document.querySelector(".search")
+let seccion = document.querySelector(".busqueda")
 let titulo = document.querySelector(".titulo")
 
-const texto = document.getElementById('texto');
-const invalidTexto =document.querySelector ('.texto ');
-const form = document.querySelector('.search_form')
+const texto = document.getElementById('buscar');
+const invalidTexto = document.querySelector ('.invalido');
+const forms = document.querySelector('.search-form')
 
 
 console.log(bus)
@@ -30,13 +31,15 @@ fetch(`https://dummyjson.com/recipes/search?q=${bus}`)
         `;
         seccion.innerHTML += markUp
     }
-    
+    if( data.recipes.length === 0){
+      noResults.style.display = 'block'
+    }
 })
 .catch(function(error) {
   console.log("Error: ", error);
 })
 
-form.addEventListener('submit', function (event) {
+forms.addEventListener('submit', function (event) {
   event.preventDefault();
 
   let errors = false;

@@ -25,18 +25,19 @@
         </nav>
 
         <div>
-            <form action="search-results.html" method="get">
-                <input class="buscador" type="search" name="search" value="" placeholder="Escriba aquí:">
+            <form class="search-form" action="search-results.html" method="get">
+                <input class="buscador" type="search" name="search" id="buscar" value="" placeholder="Escriba aquí:">
                 <button class="buscador" type="submit">Buscar</button>
-                <div class="invalid-feedback texto"></div>
+                <div class="invalid-feedback invalido"></div>
             </form>
         </div>
         
     </header>
 
-    <section class="search">
+    <section class="busqueda">
 
     </section>
+    <div class="no_results"><p>No se encontraron resultados</p></div>
 
     <footer>
         <nav>

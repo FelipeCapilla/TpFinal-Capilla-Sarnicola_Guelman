@@ -2,8 +2,9 @@ const home = document.querySelector('.home')
 let homes = ""
 const boton = document.querySelector("#cargar")
 let skip = 0
-const texto = document.getElementById('search');
-const invalidTexto =document.querySelector ('.search ');
+
+const texto = document.getElementById('buscar');
+const invalidTexto =document.querySelector ('.invalido');
 const form = document.querySelector('.search_form')
 
 function getRecipes(){
@@ -44,7 +45,7 @@ form.addEventListener('submit', function (event) {
   event.preventDefault();
   let errors = false;
   console.log('erro', errors)
-  if (search.value.length < 3) {
+  if (texto.value.length < 3) {
       invalidTexto.innerText = 'Escriba al menos 3 caracteres';
       invalidTexto.style.display = 'block';
       errors = true;

@@ -5,9 +5,9 @@ const password = document.getElementById('password');
 const invalidEmail =document.querySelector ('.email ');
 const invalidPassword = document.querySelector ('.password');
 
-const texto = document.getElementById('texto');
-const invalidTexto =document.querySelector ('.texto ');
-const forms = document.querySelector('.search_form')
+const texto = document.getElementById('buscar');
+const invalidTexto =document.querySelector ('.invalido');
+const forms = document.querySelector('.search-form')
 
 form.addEventListener('submit', function (event) {
     event.preventDefault();

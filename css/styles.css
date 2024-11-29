@@ -147,6 +147,12 @@ h3{
     margin-top: 10px;
 }
 
+.no_results{
+    display: none;
+    width: 100%;
+    text-align: center;
+}
+
 @media (max-width: 420px){
     *{
         padding: 0;

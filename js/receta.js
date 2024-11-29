@@ -6,9 +6,9 @@ console.log(id)
 const receta = document.querySelector(".receta")
 let receta_Seleccionada = ""
 
-const texto = document.getElementById('texto');
-const invalidTexto =document.querySelector ('.texto ');
-const form = document.querySelector('.search_form')
+const texto = document.getElementById('buscar');
+const invalidTexto =document.querySelector ('.invalido');
+const forms = document.querySelector('.search-form')
 
 fetch(`https://dummyjson.com/recipes/${id}`)
 .then(function(response) {
@@ -37,7 +37,7 @@ fetch(`https://dummyjson.com/recipes/${id}`)
   console.log("Error: ", error);
 })
 
-form.addEventListener('submit', function (event) {
+forms.addEventListener('submit', function (event) {
   event.preventDefault();
 
   let errors = false;
