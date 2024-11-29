@@ -12,14 +12,18 @@ fetch(`https://dummyjson.com/recipes/${id}`)
 })
 .then(function(data) {
   console.log(data);
-  
+    let tagsLinks = ""
+
+    for(i = 0; i < data.tags.length; i++){
+      tagsLinks += `<a href="category.html?cat=${data.tags[i]}">${data.tags[i]}</>`
+    }
     let markUp = `
             <article>
                 <h1>${data.name}</h1>
                 <p>Instrucciones: ${data.instructions}</p>
                 <p>Tiempo de cocción: ${data.prepTimeMinutes}</p>          
                 <img src=${data.image} alt= ${data.name}>
-                <p>Categorías: ${data.mealType}</p>
+                ${tagsLinks}
             </article>
             `;
             receta.innerHTML = markUp

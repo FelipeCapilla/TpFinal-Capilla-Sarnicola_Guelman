@@ -1,8 +1,10 @@
 const home = document.querySelector('.home')
 let homes = ""
 const boton = document.querySelector("#cargar")
+let skip = 0
 
-fetch('https://dummyjson.com/recipes')
+function getRecipes(){
+  fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
 .then(function(response) {
   return response.json()
 })
@@ -20,27 +22,16 @@ fetch('https://dummyjson.com/recipes')
             `;
             homes += markUp
     }
-    home.innerHTML = homes;  
-  
-    boton.addEventListener("click", function(){
-      for(let i = 10; i < 20; i++){
-        const recetas2 = data.recipes[i]
-        let markUp2 = `
-        <article>
-          <img src=${recetas2.image} alt= ${recetas2.name}>
-          <p>${recetas2.name}</p>
-          <p>Nivel de dificultad: ${recetas2.difficulty}</p>
-          <a class="detalle" href=receta.html?id=${recetas2.id}> Ir al detalle </a>
-        </article>
-        `;
-        homes += markUp2
-      }
-      boton.style.display = "none"
-      home.innerHTML = homes
-    })
+    home.innerHTML = homes;    
 })
 .catch(function(error) {
   console.log("Error: ", error);
 })
+}
 
+getRecipes()
 
+boton.addEventListener("click", function(){
+  skip += 10
+  getRecipes()
+})
