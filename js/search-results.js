@@ -25,8 +25,8 @@ fetch(`https://dummyjson.com/recipes/search?q=${bus}`)
     let markUp = `
         <article>
             <img src=${cate.image} alt= ${cate.name}>
-            <p>${cate.name}</p>
-            <a href=receta.html?id=${cate.id}> Ir al detalle </a>
+            <h1 class="tit">${cate.name}</h1>
+            <a class="detalle" href=receta.html?id=${cate.id}> Ir al detalle </a>
         </article>
         `;
         seccion.innerHTML += markUp

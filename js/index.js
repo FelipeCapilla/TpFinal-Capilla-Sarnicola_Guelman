@@ -5,7 +5,7 @@ let skip = 0
 
 const texto = document.getElementById('buscar');
 const invalidTexto = document.querySelector ('.invalido');
-const forms = document.querySelector('.search_form')
+const forms = document.querySelector('.search-form')
 
 function getRecipes(){
   fetch(`https://dummyjson.com/recipes?limit=10&skip=${skip}`)
