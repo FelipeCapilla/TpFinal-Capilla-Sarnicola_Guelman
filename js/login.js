@@ -5,8 +5,8 @@ const password = document.getElementById('password');
 const invalidEmail =document.querySelector ('.email ');
 const invalidPassword = document.querySelector ('.password');
 
-const texto = document.getElementById('texto');
-const invalidTexto =document.querySelector ('.texto ');
+const texto = document.getElementById('search');
+const invalidTexto =document.querySelector ('.search ');
 const forms = document.querySelector('.search_form')
 
 form.addEventListener('submit', function (event) {
@@ -38,7 +38,7 @@ forms.addEventListener('submit', function (event) {
   
     let errors = false;
     console.log('erro', errors)
-    if (texto.value.length < 3) {
+    if (search.value.length < 3) {
         invalidTexto.innerText = 'Escriba al menos 3 caracteres';
         invalidTexto.style.display = 'block';
         errors = true;

@@ -5,6 +5,9 @@ let bus = queryStringObj.get("search")
 let seccion = document.querySelector(".search")
 let titulo = document.querySelector(".titulo")
 
+const texto = document.getElementById('texto');
+const invalidTexto =document.querySelector ('.texto ');
+const form = document.querySelector('.search_form')
 
 
 console.log(bus)
@@ -22,7 +25,6 @@ fetch(`https://dummyjson.com/recipes/search?q=${bus}`)
         <article>
             <img src=${cate.image} alt= ${cate.name}>
             <p>${cate.name}</p>
-            <p>Nivel de dificultad: ${cate.difficulty}</p>
             <a href=receta.html?id=${cate.id}> Ir al detalle </a>
         </article>
         `;
@@ -33,3 +35,20 @@ fetch(`https://dummyjson.com/recipes/search?q=${bus}`)
 .catch(function(error) {
   console.log("Error: ", error);
 })
+
+form.addEventListener('submit', function (event) {
+  event.preventDefault();
+
+  let errors = false;
+  console.log('erro', errors)
+  if (texto.value.length < 3) {
+      invalidTexto.innerText = 'Escriba al menos 3 caracteres';
+      invalidTexto.style.display = 'block';
+      errors = true;
+  } else {
+      invalidTexto.style.display = 'none';
+  }
+  if (!errors) {
+      this.submit();
+  }
+});
